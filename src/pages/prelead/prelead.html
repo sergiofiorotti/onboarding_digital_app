@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'PRELEAD' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <form (submit)="doPreLead()">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>{{ 'CPF' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.cpf" name="cpf"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'PHONE' | translate }}</ion-label>
+        <ion-input type="phone" [(ngModel)]="account.phone" name="phone"></ion-input>
+      </ion-item>
+      <div padding>
+        <button ion-button color="secondary" block>{{ 'PRELEAD_BUTTON' | translate }}</button>
+      </div>
+    </ion-list>
+  </form>
+</ion-content>

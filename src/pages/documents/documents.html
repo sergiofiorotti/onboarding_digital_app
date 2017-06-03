@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'DOCUMENTS_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <form (submit)="doSaveDocuments()">
+    <ion-list>
+      <div padding>
+        <button type="button" ion-button color="primary" block>{{ 'FRONT_BUTTON' | translate }}</button>
+      </div>
+
+      <div padding>
+        <button type="button" ion-button color="primary" block>{{ 'VERSE_BUTTON' | translate }}</button>
+      </div>
+
+      <div padding>
+        <button type="button" ion-button color="primary" block>{{ 'SELFIE_BUTTON' | translate }}</button>
+      </div>
+
+      <div padding>
+        <button type="submit" ion-button color="secondary" block>{{ 'DOCUMENTS_BUTTON' | translate }}</button>
+      </div>
+    </ion-list>
+  </form>
+</ion-content>

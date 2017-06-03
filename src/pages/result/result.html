@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'RESULT_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <form (submit)="doValidations()">
+    <ion-list>
+      
+      <div padding>
+        <button type="submit" ion-button color="secondary" block>{{ 'RESULT_BUTTON' | translate }}</button>
+      </div>
+    </ion-list>
+  </form>
+</ion-content>
