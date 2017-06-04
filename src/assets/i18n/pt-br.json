@@ -1,5 +1,5 @@
 {
-  "BACK_BUTTON_TEXT" : "Voltar",
+  "BACK_BUTTON_TEXT" : "",
 
   "NAME": "Nome",
   "EMAIL": "Email",
@@ -19,13 +19,13 @@
   "TUTORIAL_CONTINUE_BUTTON" : "Continuar",
 
   "TUTORIAL_SLIDE1_TITLE": "Simples!",
-  "TUTORIAL_SLIDE1_DESCRIPTION": "Clientes desistem de contratar serviços quando a adesão é complexa.",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "Você não precisa preencher muitos dados",
 
   "TUTORIAL_SLIDE2_TITLE": "Seguro!",
-  "TUTORIAL_SLIDE2_DESCRIPTION": "Bancos precisam de mais validações de segurança para reduzir riscos de fraude.",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Suas informações são processadas por robôs",
 
   "TUTORIAL_SLIDE3_TITLE": "Automático!",
-  "TUTORIAL_SLIDE3_DESCRIPTION": "O processo de validação por pessoas custa caro e é lento.",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Sua conta é aprovada em menos de um minuto",
 
   "TUTORIAL_SLIDE4_TITLE": "Pronto para Usar?",
 

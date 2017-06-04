@@ -25,14 +25,14 @@ export class ValidationsPage {
     cpf: string
   } = { 
     _id: '',
-    rg: '', 
-    shippingDate: '', 
-    name: '', 
-    father: '',
-    mother: '',
-    born: '',
-    birthday: '',
-    cpf: ''
+    rg: '37.692.760-4', 
+    shippingDate: '02/AGO/2008', 
+    name: 'MIKAEL MALANSKI SCREMIM', 
+    father: 'LUIZ ALBERTO SCREMIN',
+    mother: 'MARILSE MALANSKI SCREMIN',
+    born: 'CURITIBA -PR',
+    birthday: '11/MAR/1990',
+    cpf: '395117458/75'
   };
 
   id: any;

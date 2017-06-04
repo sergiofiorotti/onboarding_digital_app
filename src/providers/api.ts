@@ -7,7 +7,8 @@ import 'rxjs/add/operator/map';
  */
 @Injectable()
 export class Api {
-  url: string = 'http://40.71.227.238:3000/api';
+  // url: string = 'http://40.71.227.238:3000/api';
+  url: string = 'http://localhost:3000/api';
 
   constructor(public http: Http) {
   }

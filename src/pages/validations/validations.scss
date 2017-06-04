@@ -5,6 +5,10 @@ background: -webkit-linear-gradient(top, #007986 0%,#00b8ae 100%); /* Chrome10-2
 background: linear-gradient(to bottom, #007986 0%,#00b8ae 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007986', endColorstr='#00b8ae',GradientType=0 ); /* IE6-9 */
 
+.item {
+  color: #fff !important;
+}
+
 .toolbar-background{
     background-color: #006a78;
     border-color: transparent;

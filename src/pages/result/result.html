@@ -6,7 +6,20 @@
 <ion-content>
   <form (submit)="doValidations()">
     <ion-list>
-      
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4></ion-col>
+          <ion-col col-4><ion-icon name="md-checkmark-circle" style="color: #32db64; font-size: 100px"></ion-icon></ion-col>
+          <ion-col col-4></ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-2></ion-col>
+          <ion-col col-8><p style="color: #fff; text-align: center">Sua conta foi aprovada!</p></ion-col>
+          <ion-col col-2></ion-col>
+        </ion-row>
+      </ion-grid>
       <div padding>
         <button type="submit" ion-button color="secondary" block>{{ 'RESULT_BUTTON' | translate }}</button>
       </div>

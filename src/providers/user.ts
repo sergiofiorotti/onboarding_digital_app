@@ -34,7 +34,7 @@ export class User {
   }
 
   update(accountInfo: any) {
-    let seq = this.api.patch('users/' + accountInfo._id, accountInfo).share();
+    let seq = this.api.post('users/' + accountInfo._id, accountInfo).share();
 
     seq
       .map(res => res.json())
