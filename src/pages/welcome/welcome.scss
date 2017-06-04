@@ -1,4 +1,12 @@
 page-welcome {
+    background: #007986; /* Old browsers */
+    background: -webkit-linear-gradient(#007986 0%, #00b8ae 100%);
+    background: -moz-linear-gradient(#007986 0%, #00b8ae 100%);
+    background: -o-linear-gradient(#007986 0%, #00b8ae 100%);
+    background: linear-gradient(#007986 0%, #00b8ae 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007986', endColorstr='#00b8ae',GradientType=0 ); /* IE6-9 */
+       
+
   .splash-bg {
     position: relative;
     background: url('../assets/img/splashbg.png') no-repeat transparent;
@@ -19,28 +27,38 @@ page-welcome {
     z-index: 2;
     margin-top: -64px;
     text-align: center;
+    color: #fff;
   }
   .splash-logo {
+    position: relative;
+    top: -40px;
     margin: auto;
-    background: url('../assets/img/appicon.png') repeat transparent;
+    background: url('../assets/img/logo.png') no-repeat transparent;
     background-size: 100%;
-    width: 128px;
-    height: 128px;
+    width: 280px;
+    height: 140px;
   }
   .splash-intro {
     font-size: 18px;
     font-weight: bold;
     max-width: 80%;
     margin: auto;
+    color: #fff;
   }
-  button.login {
+  button.signup {
+    
+    background: #cc33ff; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #cc33ff 0%, #990099 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #cc33ff 0%,#990099 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #cc33ff 0%,#990099 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc33ff', endColorstr='#990099',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
     margin-top: 25px;
-    background-color: white;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-    color: #333;
+    color: #fff;
 
     &.activated {
-      background-color: rgb(220, 220, 220);
-    }
+      background: #7F0059;
+   }
   }
 }

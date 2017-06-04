@@ -18,18 +18,18 @@
   "TUTORIAL_SKIP_BUTTON" : "Pular",
   "TUTORIAL_CONTINUE_BUTTON" : "Continuar",
 
-  "TUTORIAL_SLIDE1_TITLE": "Bem-vindo ao Ionic Super Starter",
-  "TUTORIAL_SLIDE1_DESCRIPTION": "O <b>Ionic Super Starter</b> é um starter para Ionic completo, com diversos componentes e páginas prontas para ser utilizado como guia de melhores práticas.",
+  "TUTORIAL_SLIDE1_TITLE": "Simples!",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "Clientes desistem de contratar serviços quando a adesão é complexa.",
 
-  "TUTORIAL_SLIDE2_TITLE": "Como utilizar o Super Starter",
-  "TUTORIAL_SLIDE2_DESCRIPTION": "Combine os tipos de páginas que você quer e remova aquelas que não precisa. No starter existem muitos casos de uso comuns de layouts e páginas como login, cadastro, abas e de tutorial.",
+  "TUTORIAL_SLIDE2_TITLE": "Seguro!",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Bancos precisam de mais validações de segurança para reduzir riscos de fraude.",
 
-  "TUTORIAL_SLIDE3_TITLE": "Iniciando o projeto",
-  "TUTORIAL_SLIDE3_DESCRIPTION": "Precisa de ajuda? Dê uma olhada no README do Super Starter para um tutorial completo",
+  "TUTORIAL_SLIDE3_TITLE": "Automático!",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "O processo de validação por pessoas custa caro e é lento.",
 
   "TUTORIAL_SLIDE4_TITLE": "Pronto para Usar?",
 
-  "WELCOME_INTRO" : "O ponto de partida para seu próximo app feito no Ionic",
+  "WELCOME_INTRO" : "Uma solução automatizada de autenticação voltada a experiência do usuário.",
 
   "SETTINGS_TITLE": "Configurações",
   "SETTINGS_OPTION1": "Opção 1",

@@ -5,49 +5,52 @@
 </ion-header>
 <ion-content>
   <form (submit)="doValidations()">
-    <ion-list>
-      <ion-item>
+    <ion-list no-lines>
+      <div class="listfloat">
+      <ion-item no-lines>
         <ion-label fixed>{{ 'RG' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.rg" name="rg"></ion-input>
+        <ion-input type="text" class="items" [(ngModel)]="account.rg" name="rg"></ion-input>
       </ion-item>
       
-      <ion-item>
+      <ion-item no-lines>
         <ion-label fixed>{{ 'SHIPPINGDATE' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.shippingDate" name="shippingDate"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item no-lines> 
         <ion-label fixed>{{ 'NAME' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item no-lines>
         <ion-label fixed>{{ 'FATHER' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.father" name="father"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item no-lines>
         <ion-label fixed>{{ 'MOTHER' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.mother" name="mother"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item no-lines>
         <ion-label fixed>{{ 'BORN' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.born" name="born"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item no-lines>
         <ion-label fixed>{{ 'BIRTHDAY' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.birthday" name="birthday"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item no-lines>
         <ion-label fixed>{{ 'CPF' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.cpf" name="cpf"></ion-input>
       </ion-item>
       
+      </div>
+
       <div padding>
-        <button type="submit" ion-button color="secondary" block>{{ 'VALIDATIONS_BUTTON' | translate }}</button>
+        <button type="submit" ion-button block class="signup">{{ 'VALIDATIONS_BUTTON' | translate }}</button>
       </div>
     </ion-list>
   </form>

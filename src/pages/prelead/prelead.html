@@ -4,23 +4,33 @@
   </ion-navbar>
 </ion-header>
 <ion-content>
+
+<div padding>
   <form (submit)="doPreLead()">
     <ion-list>
+        <ion-list-header no-lines class="formprelead">{{ 'CPF' | translate }}</ion-list-header>
       <ion-item>
-        <ion-label fixed>{{ 'CPF' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.cpf" name="cpf"></ion-input>
       </ion-item>
+    </ion-list>
+
+      <ion-list>
+      <ion-list-header no-lines class="formprelead">{{ 'EMAIL' | translate }}</ion-list-header>
       <ion-item>
-        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
       </ion-item>
+    </ion-list>
+
+      <ion-list>
+      <ion-list-header no-lines class="formprelead">{{ 'PHONE' | translate }}</ion-list-header>
       <ion-item>
-        <ion-label fixed>{{ 'PHONE' | translate }}</ion-label>
         <ion-input type="phone" [(ngModel)]="account.phone" name="phone"></ion-input>
       </ion-item>
+      </ion-list>
+
       <div padding>
-        <button ion-button color="secondary" block>{{ 'PRELEAD_BUTTON' | translate }}</button>
+        <button ion-button class="next" block>{{ 'PRELEAD_BUTTON' | translate }}</button>
       </div>
-    </ion-list>
   </form>
+</div>
 </ion-content>
