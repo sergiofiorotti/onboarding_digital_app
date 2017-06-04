@@ -15,9 +15,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class PreleadPage {
 
   account: { cpf: string, email: string, phone: string } = {
-    cpf: '11.222.333-44',
-    email: 'test@example.com',
-    phone: '(11) 99999-9999'
+    cpf: '',
+    email: '',
+    phone: ''
   };
   private signupErrorString: string;
 
@@ -32,19 +32,12 @@ export class PreleadPage {
   }
 
   doPreLead() {
-    // this.user.signup(this.account).subscribe((resp) => {
-    //   this.navCtrl.push(MainPage);
-    // }, (err) => {
-
-      this.navCtrl.push(DocumentsPage);
-      
-    //   let toast = this.toastCtrl.create({
-    //     message: this.signupErrorString,
-    //     duration: 3000,
-    //     position: 'top'
-    //   });
-    //   toast.present();
-    // });
+    this.user.create(this.account).subscribe((resp) => {
+      this.navCtrl.push(DocumentsPage, {
+        data: resp
+      });
+    }, (err) => {
+      console.log(err);
+    });
   }
-
 }

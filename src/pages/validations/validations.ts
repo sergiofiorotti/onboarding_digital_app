@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, ToastController } from 'ionic-angular';
+import { NavController, ToastController, NavParams } from 'ionic-angular';
 
-import { MainPage } from '../../pages/pages';
 import { ResultPage } from '../result/result';
 
 import { User } from '../../providers/user';
@@ -14,7 +13,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ValidationsPage {
 
-  account: { 
+  account: {
+    _id: string,
     rg: string, 
     shippingDate: string, 
     name: string, 
@@ -23,7 +23,8 @@ export class ValidationsPage {
     born: string,
     birthday: string,
     cpf: string
-  } = {
+  } = { 
+    _id: '',
     rg: '', 
     shippingDate: '', 
     name: '', 
@@ -34,32 +35,29 @@ export class ValidationsPage {
     cpf: ''
   };
 
+  id: any;
+
   private signupErrorString: string;
 
   constructor(public navCtrl: NavController,
     public user: User,
     public toastCtrl: ToastController,
-    public translateService: TranslateService) {
+    public translateService: TranslateService,
+    public navParams: NavParams) {
 
     this.translateService.get('SIGNUP_ERROR').subscribe((value) => {
       this.signupErrorString = value;
     })
+
+    this.id = navParams.get("id");
   }
 
   doValidations() {
-    // this.user.signup(this.account).subscribe((resp) => {
-    //   this.navCtrl.push(MainPage);
-    // }, (err) => {
-
-      this.navCtrl.push(ResultPage);
-      
-    //   let toast = this.toastCtrl.create({
-    //     message: this.signupErrorString,
-    //     duration: 3000,
-    //     position: 'top'
-    //   });
-    //   toast.present();
-    // });
+    this.account._id = this.id;
+    this.user.update(this.account).subscribe((resp) => {
+      this.navCtrl.push(ResultPage);  
+    }, (err) => {
+    });
   }
 
 }

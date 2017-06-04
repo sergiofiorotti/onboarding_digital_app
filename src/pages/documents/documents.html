@@ -7,15 +7,15 @@
   <form (submit)="doSaveDocuments()">
     <ion-list>
       <div padding>
-        <button type="button" ion-button color="primary" block>{{ 'FRONT_BUTTON' | translate }}</button>
+        <button type="button" (click)="takePhoto()" ion-button color="primary" block>{{ 'FRONT_BUTTON' | translate }}</button>
       </div>
 
       <div padding>
-        <button type="button" ion-button color="primary" block>{{ 'VERSE_BUTTON' | translate }}</button>
+        <button type="button" (click)="takePhoto()" ion-button color="primary" block>{{ 'VERSE_BUTTON' | translate }}</button>
       </div>
 
       <div padding>
-        <button type="button" ion-button color="primary" block>{{ 'SELFIE_BUTTON' | translate }}</button>
+        <button type="button" (click)="takePhoto()" ion-button color="primary" block>{{ 'SELFIE_BUTTON' | translate }}</button>
       </div>
 
       <div padding>
